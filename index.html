@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" />
   </head>
   <body>
+
   <!--...............................Section navbar..............................-->
     <div class="nav_bar" id="top_nav">
       <div class="header_logo">
@@ -24,7 +25,8 @@
         </a>
       </div>
     </div>
-<!--...............................Section main..............................-->
+
+<!--...............................Section main........................................-->
     <main>
       <div class="hero_section">
         <div class="hero_content">
@@ -34,14 +36,15 @@
           <p class="hero_text">
             Do you like to play ? <br>Our next gaming event is open for reservations... Limited places!
           </p>
-          <button class="btn_signup modal_btn">I subscribe</button>
+          <button class="btn_signup modal_btn">I'm registering</button>
         </div>
         <div class="hero_img">
           <img src="img/bg_img.jpg" alt="img" />
         </div>
-        <button class="btn_signup modal_btn">I subscribe</button>
+        <button class="btn_signup modal_btn">I'm registering</button>
       </div>
-<!--...............................Section forms..............................-->
+      
+<!--...............................Section forms......................................-->
       <div class="bground">
         <div class="content">
           <span class="close" id="closeform"></span>
@@ -67,7 +70,8 @@
                 <label>How many GameOn tournaments have you participated in ?</label><br>
                 <input type="number" class="text_control" id="quantity" name="quantity" min="0" max="99" required>
               </div>
-<!--...............................Section checkbox..............................-->
+
+<!--...............................Section checkbox.................................-->
               <p class="text_label">Which cities ?</p>
               <div class="formData">
                 <input class="checkbox_input" type="radio" id="location1" name="location" value="New York"  />
@@ -95,26 +99,26 @@
                   <span class="checkbox_icon"></span>Portland
                 </label>
               </div>
-<!--...............................Section Terms..............................-->
+<!--...............................Section Terms.......................................-->
               <div class="formData">
-                <input class="checkbox_input" type="checkbox" id="checkbox1" checked required>
-                <label class="checkbox2_label" for="checkbox1" >
+                <input class="checkbox_input" type="checkbox" id="registration1" checked required>
+                <label class="registration2_label" for="registration1" >
                   <span class="checkbox_icon"></span>I have read and accepted the terms of use.
                 </label><br>
-                <input class="checkbox_input" type="checkbox" id="checkbox2" />
-                <label class="checkbox2_label" for="checkbox2">
+                <input class="checkbox_input" type="checkbox" id="registration2" />
+                <label class="registration2_label" for="registration2">
                   <span class="checkbox_icon"></span>I would like to be notified of upcoming events.
                 </label><br>
               </div>
-              <input type="submit" id="inscription" class="btn_submit thank_btn" class="button" value="Let's go" />
+              <input type="submit" id="registration" class="btn_submit thank_btn" class="button" value="Let's go" />
             </form>
           </div>
         </div>
       </div>
-<!--...............................Section Thanks..............................-->
+<!--...............................Section Thanks......................................-->
       <div class="bground_thank">
         <div class="content_thank">
-          <span class="close" id="closethanks"></span>
+          <span class="close" id="close_thanks"></span>
           <div class="thank_body">
             <p class="text_thank">Thank you!<br/> Your reservation has been received.</p>
           </div>
@@ -122,7 +126,7 @@
         </div>
       </div>
     </main>
-<!--...............................Section footer..............................-->
+<!--..................................Section footer..................................-->
     <footer>
       <p class="copyrights">Copyright 2014 - 2020, GameOn Inc.</p>
     </footer>
