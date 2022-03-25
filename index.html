@@ -4,37 +4,52 @@
     <meta charset="utf-8" />
     <title>Reservation</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" />
   </head>
   <body>
+    <!--...............................Section navbar..............................-->
 
-  <!--...............................Section navbar..............................-->
     <div class="nav_bar" id="top_nav">
       <div class="header_logo">
-        <img alt="logo" src="img/Logo.png" class="logo"/>
+        <img alt="logo" src="img/Logo.png" class="logo" />
       </div>
       <div class="navbar">
         <a href="#" class="nav_bar-link after"><p>Event details</p></a>
         <a href="#" class="nav_bar-link after"><p>About</p></a>
         <a href="#" class="nav_bar-link after"><p>Contact</p></a>
         <a href="#" class="nav_bar-link after"><p>Past events</p></a>
-        <a href="javascript:void(0);" class="nav_bar-link icon" onclick="editNav()" >
+        <a
+          href="javascript:void(0);"
+          class="nav_bar-link icon"
+          onclick="editNav()"
+        >
           <i class="fa fa-bars"></i>
         </a>
       </div>
     </div>
 
-<!--...............................Section main........................................-->
+    <!--...............................Section main........................................-->
+
     <main>
       <div class="hero_section">
         <div class="hero_content">
           <h1 class="hero_headline">
-            national marathon<br>video games
+            national marathon
+            <br />
+            video games
           </h1>
           <p class="hero_text">
-            Do you like to play ? <br>Our next gaming event is open for reservations... Limited places!
+            Do you like to play ?
+            <br />
+            Our next gaming event is open for reservations... Limited places!
           </p>
           <button class="btn_signup modal_btn">I'm registering</button>
         </div>
@@ -43,95 +58,212 @@
         </div>
         <button class="btn_signup modal_btn">I'm registering</button>
       </div>
-      
-<!--...............................Section forms......................................-->
+
+      <!--...............................Section forms......................................-->
+
       <div class="bground">
         <div class="content">
           <span class="close" id="closeform"></span>
           <div class="modal_body">
             <form name="reserve" action="index.html" method="get">
               <div class="formData">
-                <label>First Name</label><br>
-                <input class="text_control" type="text" id="first" name="first" minlength="2" required /><br>
+                <label>First Name</label>
+                <br />
+                <input
+                  class="text_control"
+                  type="text"
+                  id="first"
+                  name="first"
+                  minlength="2"
+                  required
+                />
+                <br />
               </div>
               <div class="formData">
-                <label>Name</label><br>
-                <input class="text_control" type="text" id="last" name="last" required/><br>
-              </div>
-              <div  class="formData">
-                <label>E-mail</label><br>
-                <input class="text_control" type="email" id="email" name="email" required/><br>
+                <label>Name</label>
+                <br />
+                <input
+                  class="text_control"
+                  type="text"
+                  id="last"
+                  name="last"
+                  required
+                />
+                <br />
               </div>
               <div class="formData">
-                <label>Date of Birth</label><br>
-                <input class="text_control" type="date" id="birthdate" name="birthdate" required/><br>
+                <label>E-mail</label>
+                <br />
+                <input
+                  class="text_control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <br />
               </div>
               <div class="formData">
-                <label>How many GameOn tournaments have you participated in ?</label><br>
-                <input type="number" class="text_control" id="quantity" name="quantity" min="0" max="99" required>
+                <label>Date of Birth</label>
+                <br />
+                <input
+                  class="text_control"
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  required
+                />
+                <br />
               </div>
-
-<!--...............................Section checkbox.................................-->
+              <div class="formData">
+                <label>
+                  How many GameOn tournaments have you participated in ?
+                </label>
+                <br />
+                <input
+                  type="number"
+                  class="text_control"
+                  id="quantity"
+                  name="quantity"
+                  min="0"
+                  max="99"
+                  required
+                />
+              </div>
+              <!--...............................Section checkbox radio.................................-->
               <p class="text_label">Which cities ?</p>
-              <div class="formData">
-                <input class="checkbox_input" type="radio" id="location1" name="location" value="New York"  />
+              <div class="formData" id="locations">
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location1"
+                  name="location"
+                  value="New York"
+                />
                 <label class="checkbox_label" for="location1">
-                  <span class="checkbox_icon"></span>New York
+                  <span class="checkbox_icon"></span>
+                  New York
                 </label>
-                <input class="checkbox_input" type="radio" id="location2" name="location" value="San Francisco" />
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location2"
+                  name="location"
+                  value="San Francisco"
+                />
                 <label class="checkbox_label" for="location2">
-                  <span class="checkbox_icon"></span>San Francisco
+                  <span class="checkbox_icon"></span>
+                  San Francisco
                 </label>
-                <input class="checkbox_input" type="radio" id="location3" name="location" value="Seattle" />
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location3"
+                  name="location"
+                  value="Seattle"
+                />
                 <label class="checkbox_label" for="location3">
-                  <span class="checkbox_icon"></span>Seattle
+                  <span class="checkbox_icon"></span>
+                  Seattle
                 </label>
-                <input class="checkbox_input" type="radio" id="location4" name="location" value="Chicago" />
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location4"
+                  name="location"
+                  value="Chicago"
+                />
                 <label class="checkbox_label" for="location4">
-                  <span class="checkbox_icon"></span>Chicago
+                  <span class="checkbox_icon"></span>
+                  Chicago
                 </label>
-                <input class="checkbox_input" type="radio" id="location5" name="location" value="Boston" />
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location5"
+                  name="location"
+                  value="Boston"
+                />
                 <label class="checkbox_label" for="location5">
-                  <span class="checkbox_icon"></span>Boston
+                  <span class="checkbox_icon"></span>
+                  Boston
                 </label>
-                <input class="checkbox_input" type="radio" id="location6" name="location" value="Portland" />
+                <input
+                  class="checkbox_input"
+                  type="radio"
+                  id="location6"
+                  name="location"
+                  value="Portland"
+                />
                 <label class="checkbox_label" for="location6">
-                  <span class="checkbox_icon"></span>Portland
+                  <span class="checkbox_icon"></span>
+                  Portland
                 </label>
               </div>
-<!--...............................Section Terms.......................................-->
-              <div class="formData">
-                <input class="checkbox_input" type="checkbox" id="registration1" checked required>
-                <label class="registration2_label" for="registration1" >
-                  <span class="checkbox_icon"></span>I have read and accepted the terms of use.
-                </label><br>
-                <input class="checkbox_input" type="checkbox" id="registration2" />
-                <label class="registration2_label" for="registration2">
-                  <span class="checkbox_icon"></span>I would like to be notified of upcoming events.
-                </label><br>
+                  <span class="hidden" id="locationMsg">
+                    You have not selected a city</span>
+                  <span class="hidden" id="locationMsg2">
+                    You have select too many cities</span>
+              <!--...............................Section Terms.......................................-->
+
+              <div class="formData" id="terms">
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  id="checkbox1"
+                  checked
+                  required
+                />
+                <label class="checkbox2_label" for="checkbox1" required>
+                  <span class="checkbox_icon"></span>
+                  I have read and accepted the terms of use.
+                </label>
+                <br />
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  id="checkbox2"
+                />
+                <label class="checkbox2_label" for="checkbox2" required>
+                  <span class="checkbox_icon"></span>
+                  I would like to be notified of upcoming events.
+                </label>
+                <br />
               </div>
-              <input type="submit" id="registration" class="btn_submit thank_btn" class="button" value="Let's go" />
+              <input
+                type="submit"
+                id="registration"
+                class="btn_submit thank_btn"
+                class="button"
+                value="Let's go"
+              />
             </form>
           </div>
         </div>
       </div>
-<!--...............................Section Thanks......................................-->
+
+      <!--...............................Section Thanks......................................-->
+
       <div class="bground_thank">
         <div class="content_thank">
           <span class="close" id="close_thanks"></span>
           <div class="thank_body">
-            <p class="text_thank">Thank you!<br/> Your reservation has been received.</p>
+            <p class="text_thank">
+              Thank you!
+              <br />
+              Your reservation has been received.
+            </p>
           </div>
           <input type="submit" class="btn_submit button_thank" value="Close" />
         </div>
       </div>
     </main>
-<!--..................................Section footer..................................-->
+
+    <!--..................................Section footer..................................-->
+
     <footer>
-      <p class="copyrights">Copyright 2014 - 2020, GameOn Inc.</p>
+      <p class="copyrights">Copyright 2022 - 2023, GameOn Inc.</p>
     </footer>
-
     <script src="app.js"></script>
-
   </body>
-</html>
+  </html>
